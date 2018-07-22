@@ -7,17 +7,17 @@ var HomePage = {
   data: function() {
     return {
       student: {
-        first_name: "John",
-        last_name: "Doe",
-        email: "jdoe@gmail.com",
-        phone_number: "123.456.7880",
-        short_bio: "blah blah",
-        linkedin_url: "https://linkedin.com",
-        twitter_handle: "https://twitter.com",
-        personal_blog_website_url: "http://medium.com/jdoe",
-        online_resume_url: "https://johndoe.com",
-        github_url: "https://github.com/jdoe",
-        photo: "http://quotesnsmiles.com/wp-content/uploads/2013/07/1.a-drop-of-kindness-picture-quotes.jpg"
+        first_name: "",
+        last_name: "",
+        email: "",
+        phone_number: "",
+        short_bio: "",
+        linkedin_url: "",
+        twitter_handle: "",
+        personal_blog_website_url: "",
+        online_resume_url: "",
+        github_url: "",
+        photo: ""
       },
       education: {
         start_date: "5/1/2001",
@@ -45,7 +45,12 @@ var HomePage = {
       },
     };
   },
-  created: function() {},
+  created: function() {
+    axios.get("/student.json").then(function(response){
+          this.student = response.data;
+          console.log(this.student);
+        }.bind(this));
+  },
   methods: {
   },
   computed: {}

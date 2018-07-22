@@ -11,7 +11,7 @@ var HomePage = {
     };
   },
   created: function() {
-    axios.get("/student.json/").then(function(response){
+    axios.get("http://localhost:3000/api/students/1").then(function(response){
           this.student = response.data;
           console.log(this.student);
         }.bind(this));

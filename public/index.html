@@ -17,8 +17,11 @@
 <body>
   <div id="vue-app">
 
+  <div class="container">
     <router-view></router-view>
+    </div>
 
+  
   </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -30,26 +33,42 @@
 <template id="home-page">
   <div class="vue-component">
     <!-- <div v-for="student in students"></div> -->
-    <p>{{ student.first_name}} {{student.last_name}}</p> 
-    <p>{{ student.email}}</p>
-    <p>{{ student.phone_number}}</p>
-    <p>{{ student.short_bio}}</p>
-    <p>{{ student.linkedin_url}}</p>
-    <p>{{ student.twitter_handle}}</p>
-    <p>{{ student.personal_blog_website_url}}</p>
-    <p>{{ student.online_resume_url}}</p>
-    <p>{{ student.github_url}}</p>
-    <p><img :src=student.photo></p>
-    <p>{{education.start_date}}</p> 
-    <p>{{education.end_date}}</p> 
-    <p>{{education.degree}}</p> 
-    <p>{{education.university_name}}</p> 
-    <p>{{education.details}}</p> 
-    <p>{{skill.name}}</p>
+    <div class="outline">
+      <p><img :src=student.photo></p>
+    
+    
+    <h2>{{ student.first_name}} {{student.last_name}}</h2> 
+    <p>Email: {{ student.email}}</p>
+    <p>Phone Number: {{ student.phone_number}}</p>
+    <p>My Bio: {{ student.short_bio}}</p>
+    <p>LinkedIn:{{ student.linkedin_url}}</p>
+    <p>Twitter: {{ student.twitter_handle}}</p>
+    <p>My Blog: {{ student.personal_blog_website_url}}</p>
+    <p>My Online Resume: {{ student.online_resume_url}}</p>
+    <p>Github: {{ student.github_url}}</p>
+    <!-- <p><img :src=student.photo></p> -->
+    
+    <!-- education -->
+    <p>Start Date: {{education.start_date}}</p> 
+    <p>End Date: {{education.end_date}}</p> 
+    <p>Degree: {{education.degree}}</p> 
+    <p>University: {{education.university_name}}</p> 
+    <p>Details: {{education.details}}</p> 
+    <!-- skills -->
+    <p> {{skill.name}}</p>
+    
+    <!--  capstones -->
     <p>{{capstone.name}}</p>
     <p>{{capstone.description}}</p>
     <p>{{capstone.url}}</p>
     <p><img :src=capstone.screenshot></p>
-
+    
+    <!-- Experience -->
+    <p>Start Date:{{ experience.start_date}}</p>
+    <p>End Date: {{ experience.end_date}}</p>
+    <p>Job Title: {{ experience.job_title}}</p>
+    <p>Company: {{ experience.company_name}}</p>
+    <p>Details: {{ experience.details}}</p>
+    </div>
   </div>
 </template>

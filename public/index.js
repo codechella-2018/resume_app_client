@@ -35,11 +35,19 @@ var HomePage = {
         url: "capstone url",
         screenshot: "https://www.blakespectrum.org/wp-content/uploads/2015/10/Coding-Screenshot.jpg"
 
-      }
+      },
+      experience: {
+        start_date: "1/1/2010",
+        end_date: "1/1/2017",
+        job_title: "engineer",
+        company_name: "aceme",
+        details: "JS, CSS, HTML, Bootstrap"
+      },
     };
   },
   created: function() {},
-  methods: {},
+  methods: {
+  },
   computed: {}
 };
 

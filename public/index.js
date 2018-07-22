@@ -18,6 +18,23 @@ var HomePage = {
         online_resume_url: "https://johndoe.com",
         github_url: "https://github.com/jdoe",
         photo: "http://quotesnsmiles.com/wp-content/uploads/2013/07/1.a-drop-of-kindness-picture-quotes.jpg"
+      },
+      education: {
+        start_date: "5/1/2001",
+        end_date: "8/1/2005",
+        degree: "Bachelor of Science",
+        university_name: "University of Growth Mentality",
+        details: "this is details"
+      },
+      skill: {
+        name: "css, html, javascript"
+      },
+      capstone: {
+        name: "Capstone name",
+        description: "this is my capstone",
+        url: "capstone url",
+        screenshot: "https://www.blakespectrum.org/wp-content/uploads/2015/10/Coding-Screenshot.jpg"
+
       }
     };
   },

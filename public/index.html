@@ -30,16 +30,17 @@
 <template id="home-page">
   <div class="vue-component">
     <!-- <div v-for="student in students"></div> -->
-    <p>{{ first_name}} {{last_name}}</p> 
-    <p>{{ email}}</p>
-    <p>{{ phone_number}}</p>
-    <p>{{ short_bio}}</p>
-    <p>{{ linkedin_url}}</p>
-    <p>{{ twitter_handle}}</p>
-    <p>{{ personal_blog_website_url}}</p>
-    <p>{{ online_resume_url}}</p>
-    <p>{{ github_url}}</p>
-    <p><img src="https://matadormessenger.com/wp-content/uploads/2018/06/pasted-image-0-12-900x675.png"></p>
+    <p>{{ student.first_name}} {{student.last_name}}</p> 
+    <p>{{ student.email}}</p>
+    <p>{{ student.phone_number}}</p>
+    <p>{{ student.short_bio}}</p>
+    <p>{{ student.linkedin_url}}</p>
+    <p>{{ student.twitter_handle}}</p>
+    <p>{{ student.personal_blog_website_url}}</p>
+    <p>{{ student.online_resume_url}}</p>
+    <p>{{ student.github_url}}</p>
+    <p><img :src=student.photo></p>
+   
     
 
   </div>

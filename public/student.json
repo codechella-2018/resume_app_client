@@ -1,5 +1,4 @@
-  {
-        "student": {
+{
           "first_name": "John",
           "last_name": "Doe",
           "email": "jdoe@gmail.com",
@@ -10,30 +9,65 @@
           "personal_blog_website_url": "http://medium.com/jdoe",
           "online_resume_url": "https://johndoe.com",
           "github_url": "https://github.com/jdoe",
-          "photo": "http://quotesnsmiles.com/wp-content/uploads/2013/07/1.a-drop-of-kindness-picture-quotes.jpg"
-        },
-        "education": {
-          "start_date": "5/1/2001",
-          "end_date": "8/1/2005",
-          "degree": "Bachelor of Science",
-          "university_name": "University of Growth Mentality",
-          "details": "this is details"
-        },
-        "skill": {
-          "name": "css, html, javascript"
-        },
-        "capstone": {
-          "name": "Capstone name",
-          "description": "this is my capstone",
-          "url": "capstone url",
-          "screenshot": "https://www.blakespectrum.org/wp-content/uploads/2015/10/Coding-Screenshot.jpg"
-
-        },
-        "experience": {
-          "start_date": "1/1/2010",
-          "end_date": "1/1/2017",
-          "job_title": "engineer",
-          "company_name": "aceme",
-          "details": "JS, CSS, HTML, Bootstrap"
-        },
-      };
+          "photo": "http://quotesnsmiles.com/wp-content/uploads/2013/07/1.a-drop-of-kindness-picture-quotes.jpg",
+          "educations": [
+            {
+              "start_date": "5/1/2001",
+              "end_date": "8/1/2005",
+              "degree": "Bachelor of Science",
+              "university_name": "University of Growth Mentality",
+              "details": "this is details"
+            },
+            {
+              "start_date": "9/1/2999",
+              "end_date": "8/1/2005",
+              "degree": "Bachelor of Science",
+              "university_name": "University of Growth Mentality",
+              "details": "this is details"
+            }
+          ],
+          "skills": [
+            {
+              
+              "name": "this is details"
+            },
+            {
+              
+              "name": "this is details2"
+            }
+          ],
+          "capstones": [
+            {
+              
+              "name": "Capstone name",
+              "description": "Capstone description",
+              "url": "cappy url",
+              "screenshot": "https://www.blakespectrum.org/wp-content/uploads/2015/10/Coding-Screenshot.jpg"
+            },
+            {
+              
+              "name": "Capstone name",
+              "description": "Capstone description2",
+              "url": "cappy url2",
+              "screenshot": "https://www.blakespectrum.org/wp-content/uploads/2015/10/Coding-Screenshot.jpg"
+            }
+          ],
+          "experiences": [
+            {
+              
+              "start_date": "010101",
+              "end_date": "010101",
+              "job_title": "010101",
+              "company_name": "010101",
+              "details": "010101"
+            },
+            {
+              "start_date": "020201",
+                           "end_date": "010101",
+                           "job_title": "010101",
+                           "company_name": "010101",
+                           "details": "010101"
+            }
+          ]
+}
+        

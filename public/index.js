@@ -6,7 +6,19 @@ var HomePage = {
   template: "#home-page",
   data: function() {
     return {
-      message: "Welcome to Vue.js!"
+      // students: {},
+      first_name: "John",
+      last_name: "Doe",
+      email: "jdoe@gmail.com",
+      phone_number: "123.456.7880",
+      short_bio: "blah blah",
+      linkedin_url: "https://linkedin.com",
+      twitter_handle: "https://twitter.com",
+      personal_blog_website_url: "http://medium.com/jdoe",
+      online_resume_url: "https://johndoe.com",
+      github_url: "https://github.com/jdoe",
+      photo: ""
+
     };
   },
   created: function() {},
@@ -26,4 +38,3 @@ var app = new Vue({
   router: router
 });
 
-//done

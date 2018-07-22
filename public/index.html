@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My App</title>
+  <title>Resume App</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
@@ -29,8 +29,18 @@
 
 <template id="home-page">
   <div class="vue-component">
-
-    <h1>{{ message }}</h1>
+    <!-- <div v-for="student in students"></div> -->
+    <p>{{ first_name}} {{last_name}}</p> 
+    <p>{{ email}}</p>
+    <p>{{ phone_number}}</p>
+    <p>{{ short_bio}}</p>
+    <p>{{ linkedin_url}}</p>
+    <p>{{ twitter_handle}}</p>
+    <p>{{ personal_blog_website_url}}</p>
+    <p>{{ online_resume_url}}</p>
+    <p>{{ github_url}}</p>
+    <p><img src="https://matadormessenger.com/wp-content/uploads/2018/06/pasted-image-0-12-900x675.png"></p>
+    
 
   </div>
 </template>

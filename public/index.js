@@ -6,19 +6,19 @@ var HomePage = {
   template: "#home-page",
   data: function() {
     return {
-      // students: {},
-      first_name: "John",
-      last_name: "Doe",
-      email: "jdoe@gmail.com",
-      phone_number: "123.456.7880",
-      short_bio: "blah blah",
-      linkedin_url: "https://linkedin.com",
-      twitter_handle: "https://twitter.com",
-      personal_blog_website_url: "http://medium.com/jdoe",
-      online_resume_url: "https://johndoe.com",
-      github_url: "https://github.com/jdoe",
-      photo: ""
-
+      student: {
+        first_name: "John",
+        last_name: "Doe",
+        email: "jdoe@gmail.com",
+        phone_number: "123.456.7880",
+        short_bio: "blah blah",
+        linkedin_url: "https://linkedin.com",
+        twitter_handle: "https://twitter.com",
+        personal_blog_website_url: "http://medium.com/jdoe",
+        online_resume_url: "https://johndoe.com",
+        github_url: "https://github.com/jdoe",
+        photo: "http://quotesnsmiles.com/wp-content/uploads/2013/07/1.a-drop-of-kindness-picture-quotes.jpg"
+      }
     };
   },
   created: function() {},

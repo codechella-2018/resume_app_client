@@ -6,18 +6,8 @@ var HomePage = {
   template: "#home-page",
   data: function() {
     return {
-      student: {
-      },
-      education: {
-        
-      },
-      skill: {
-      },
-      capstone: {
-      },
-      experience: {
-        
-      },
+      student: {},
+     
     };
   },
   created: function() {

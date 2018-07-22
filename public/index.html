@@ -41,38 +41,39 @@
     <p>Email: {{ student.email}}</p>
     <p>Phone Number: {{ student.phone_number}}</p>
     <p>My Bio: {{ student.short_bio}}</p>
-    <p>LinkedIn:{{ student.linkedin_url}}</p>
+    <p >LinkedIn: {{ student.linkedin_url}}</p>
     <p>Twitter: {{ student.twitter_handle}}</p>
     <p>My Blog: {{ student.personal_blog_website_url}}</p>
     <p>My Online Resume: {{ student.online_resume_url}}</p>
     <p>Github: {{ student.github_url}}</p>
     <!-- <p><img :src=student.photo></p> -->
     
-    <!-- educations -->
+    <h3>Education</h3>
     <div v-for="education in student.educations">
-      <p>Start Date: {{education.start_date}}</p> 
-      <p>End Date: {{education.end_date}}</p> 
+      <p>{{education.start_date}} to 
+       {{education.end_date}}</p> 
       <p>Degree: {{education.degree}}</p> 
       <p>University: {{education.university_name}}</p> 
       <p>Details: {{education.details}}</p> 
     </div>
 
-    <!-- skills -->
+   <h3>Skills</h3>
     <div v-for="skill in student.skills">
       <p> {{skill.name}}</p>
     </div>
 
-    <!-- capstone -->
+    <h3>Capstone Projects</h3>
     <div v-for="capstone in student.capstones">
-      <p> {{capstone.name}}</p>
+     <p>{{capstone.name}}</p>
       <p>{{capstone.description}}</p>
       <p>{{capstone.url}}</p>
       <p><img :src=capstone.screenshot></p>
     </div>
 
+<h3>Experience</h3>
     <div v-for="experience in student.experiences">
-       <p>Start Date:{{ experience.start_date}}</p>
-       <p>End Date: {{ experience.end_date}}</p>
+       <p>{{ experience.start_date}} to {{ experience.end_date}}</p>
+   
        <p>Job Title: {{ experience.job_title}}</p>
        <p>Company: {{ experience.company_name}}</p>
        <p>Details: {{ experience.details}}</p>
